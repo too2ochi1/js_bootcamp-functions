@@ -27,5 +27,6 @@ let conversion = function (fahrenheit) {
 let temp1 = conversion(32)
 let temp2 = conversion(68)
 
+
 console.log(temp1)
 console.log(temp2)
