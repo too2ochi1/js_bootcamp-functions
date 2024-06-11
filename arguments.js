@@ -18,12 +18,10 @@ console.log(scoreText)
 
 //Challenge area
 
-let getTip = function (bill) {
-    return tip = bill * 0.3
+let getTip = function (total, tipPercent = .25) {
+    let percentage = tipPercent * 100
+     return `A ${percentage}% tip on $${total} would be $${total*tipPercent}`
 }
 
-let Finaltip1 = getTip(100)
-let Finaltip2 = getTip(1000)
-
-console.log('Your tip for this transaction is: ' + Finaltip1)
-console.log('Your tip for this transaction is: ' + Finaltip2)
+let Finaltip1 = getTip(65, .27)
+console.log(Finaltip1)
